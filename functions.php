@@ -1,7 +1,7 @@
 <?php
 
 function my_enqueue_scripts() {
-    wp_enqueue_script('my-main-js', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
+    wp_enqueue_script('my-main-js', get_template_directory_uri() . '/script.js', array('jquery'), null, true);
 
     wp_localize_script('my-main-js', 'wp_localize_script_data', array(
         'ajax_url' => admin_url('admin-ajax.php')
